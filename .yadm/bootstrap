@@ -11,6 +11,3 @@ ln -sf "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/th
 echo Install vim plugins ...
 vim -c 'PluginInstall' -c 'qa!'
 
-echo Install nvim plugins ...
-nvim -c 'PlugInstall' -c 'qa!'
-
