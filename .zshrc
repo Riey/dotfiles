@@ -72,7 +72,7 @@ source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/jetbrains/env.sh
 source $HOME/.cargo/env
 
-export EDITOR=vim
+export EDITOR=nvim
 
 
 alias clion="clion.sh"
