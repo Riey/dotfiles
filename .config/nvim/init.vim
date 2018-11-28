@@ -23,6 +23,7 @@ Plug 'neomake/neomake', { 'for': ['rust', 'haskell', 'typescript'] }
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'cespare/vim-toml'
+Plug 'Quramy/tsuquyomi'
 
 " Haskell Plugins
 if executable('ghc')
@@ -45,4 +46,9 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 
 let g:deoplete#enable_at_startup = 1
 let g:rustfmt_autosave = 1
+
+
+autocmd FileType rust map <F7> :CargoCheck<CR>
+autocmd FileType rust map <F6> :CargoBuild<CR>
+
 
