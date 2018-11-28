@@ -58,8 +58,8 @@ colorscheme molokai
 
 " vim-racer config
 set hidden
-let g:racer_cmd = "/usr/local/bin/racer"
-let $RUST_SRC_PATH="/usr/local/src/rust/src"
+let g:racer_cmd = "$HOME/.cargo/bin/racer"
+let $RUST_SRC_PATH="$HOME/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust"
 " run rustfmt on save
 let g:rustfmt_autosave = 1
 
