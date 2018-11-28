@@ -10,3 +10,6 @@
 [submodule "repos/dracula-jetbrains"]
 	path = repos/dracula-jetbrains
 	url = https://github.com/dracula/jetbrains.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/Riey/.emacs.d
