@@ -74,6 +74,11 @@ source $HOME/.cargo/env
 
 export EDITOR=vim
 
+
+alias clion="clion.sh"
+alias pycharm="pycharm.sh"
+alias webstorm="webstorm.sh"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

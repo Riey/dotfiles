@@ -1,7 +1,13 @@
 #!/bin/zsh
 
+echo Update submodules ...
 yadm submodule update --recursive --init
+
+echo Install zsh plugins ...
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -sf "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+echo Install vim plugins ...
+vim -c 'PluginInstall' -c 'qa!'
 
