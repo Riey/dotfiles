@@ -68,7 +68,15 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+autoload -U compinit promptinit
+compinit
+promptinit; prompt gentoo
+
+zstyle ':completion::complete:*' use-cache 1
+
+
 source $HOME/.cargo/env
+
 
 # User configuration
 
