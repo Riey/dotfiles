@@ -64,6 +64,8 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  sudo
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -74,6 +76,9 @@ source $HOME/.cargo/env
 
 export EDITOR=vim
 
+# Prevent emacs occur
+# Undefined color: "WINDOW_FOREGROUND"
+xrdb /dev/null
 
 alias clion="clion.sh"
 alias pycharm="pycharm.sh"
