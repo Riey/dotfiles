@@ -4,7 +4,7 @@ echo Update submodules ...
 yadm submodule update --recursive --init
 
 echo Install zsh plugins ...
-export ZSH_THEMES = $HOME/zsh-themes
+export ZSH_THEMES=$HOME/zsh-themes
 mkdir $ZSH_THEMES
 export ZSH_CUSTOM=$HOME/.oh-my-zsh/custom &&
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_THEMES/spaceship-prompt" &&
