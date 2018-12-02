@@ -1,3 +1,5 @@
+source ~/.ideavimrc
+
 " vi iMproved features
 set nocompatible
 " Don't wrap lines that extend beyond the screen
@@ -91,3 +93,4 @@ function SmoothScroll(up)
         exec "normal " . scrollaction
     endwhile
 endfunction
+

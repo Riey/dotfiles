@@ -1,0 +1,4 @@
+set gdefault
+
+vnoremap p "0p
+
