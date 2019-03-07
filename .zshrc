@@ -75,10 +75,6 @@ source $HOME/jetbrains/env.sh
 
 export EDITOR=vim
 
-# Prevent emacs occur
-# Undefined color: "WINDOW_FOREGROUND"
-xrdb /dev/null
-
 export ANDROID_SDK=/opt/android-sdk
 export ANDROID_NDK=/opt/android-ndk
 export JAVA_HOME=/usr/lib/jvm/default
