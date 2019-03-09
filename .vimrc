@@ -55,6 +55,7 @@ call vundle#end()
 filetype plugin indent on
 
 set t_Co=256
+colorscheme dracula
 
 "To ignore plugin indent changes, instead use:
 "filetype plugin on
