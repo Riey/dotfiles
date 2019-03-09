@@ -39,14 +39,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 " TOML syntax
 Plugin 'cespare/vim-toml'
-" Rust autocompletion and go to definition
-Plugin 'racer-rust/vim-racer'
 " Syntax checking
 Plugin 'scrooloose/syntastic'
 " lightweight status bar
 Plugin 'bling/vim-airline'
 " Seamless navigation between tmux panes and vim splits
 Plugin 'christoomey/vim-tmux-navigator'
+" Dracula theme
+Plugin 'dracula/vim'
 " enhance netrw (file navigation)
 "Plugin 'tpope/vim-vinegar'
 
@@ -55,15 +55,6 @@ call vundle#end()
 filetype plugin indent on
 
 set t_Co=256
-set background=dark
-colorscheme molokai
-
-" vim-racer config
-set hidden
-let g:racer_cmd = "$HOME/.cargo/bin/racer"
-let $RUST_SRC_PATH="$HOME/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust"
-" run rustfmt on save
-let g:rustfmt_autosave = 1
 
 "To ignore plugin indent changes, instead use:
 "filetype plugin on
