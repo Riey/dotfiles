@@ -1,0 +1,9 @@
+export XMODIFIERS=@im=uim
+export GTK_IM_MODULE=uim
+export QT_IM_MODULE=uim
+
+
+exec uim-xim &
+
+exec i3
+
