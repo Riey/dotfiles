@@ -71,8 +71,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $HOME/jetbrains/env.sh
-
 export EDITOR=vim
 
 export ANDROID_SDK=/opt/android-sdk
