@@ -10,7 +10,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-antigen theme denysdovhan/spaceship-prompt
+antigen theme dracula/zsh
 
 antigen apply
 
