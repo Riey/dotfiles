@@ -122,7 +122,7 @@ set $ws1 "[1] term"
 set $ws2 "[2] browser"
 set $ws3 "[3] code"
 set $ws4 "[4] code"
-set $ws5 "[5] 5"
+set $ws5 "[5] game"
 set $ws6 "[6] 6"
 set $ws7 "[7] 7"
 set $ws8 "[8] 8"
@@ -134,11 +134,14 @@ assign [class="kitty"] $ws1
 assign [class="Firefox"] $ws2
 assign [class="CLion"] $ws3
 assign [class="Emacs"] $ws3
+assign [class="Steam"] $ws5
+assign [class="Lutris"] $ws5
 assign [class="Discord"] $ws9
 assign [class="Clementine"] $ws10
 
 workspace $ws1 output HDMI-A-0
 workspace $ws3 output HDMI-A-0
+workspace $ws5 output HDMI-A-0
 
 workspace $ws2 output HDMI-A-1
 workspace $ws4 output HDMI-A-1
