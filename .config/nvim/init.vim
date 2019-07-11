@@ -22,6 +22,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
+Plug 'jreybert/vimagit'
 
 Plug 'dracula/vim'
 
@@ -32,4 +33,5 @@ colorscheme dracula
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 let g:rainbow_active = 1
+let g:airline#extensions#tabline#enabled = 1
 
