@@ -20,6 +20,7 @@ Plug 'racer-rust/vim-racer'
 Plug 'cespare/vim-toml'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
+Plug 'luochen1990/rainbow'
 
 Plug 'dracula/vim'
 
@@ -28,4 +29,6 @@ call plug#end()
 colorscheme dracula
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+let g:rainbow_active = 1
 
