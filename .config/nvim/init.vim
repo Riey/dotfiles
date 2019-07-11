@@ -19,7 +19,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'racer-rust/vim-racer'
 Plug 'cespare/vim-toml'
 Plug 'scrooloose/syntastic'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 
 Plug 'dracula/vim'
