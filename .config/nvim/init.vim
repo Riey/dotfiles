@@ -26,6 +26,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
+Plug 'roman/golden-ratio'
 
 Plug 'dracula/vim'
 
