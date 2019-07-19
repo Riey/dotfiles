@@ -50,7 +50,7 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
-autocmd CursorHold * if &filetype == "rust" | LspHover
+autocmd FileType rust autocmd CursorHold * LspHover
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 if executable('ra_lsp_server')
