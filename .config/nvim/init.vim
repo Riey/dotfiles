@@ -15,8 +15,6 @@ filetype plugin on
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'scrooloose/syntastic'
-Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
@@ -26,7 +24,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'roman/golden-ratio'
-Plug 'majutsushi/tagbar'
 
 Plug 'dracula/vim'
 
@@ -67,14 +64,11 @@ let g:lsp_diagnostics_enabled = 1
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
-let g:rustfmt_autosave = 1
-
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
 
 imap <c-space> <Plug>(asyncomplete_force_refresh)
-nmap <F8> :TagbarToggle<CR>
 
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
