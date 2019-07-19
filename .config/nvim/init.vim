@@ -13,6 +13,8 @@ set autochdir
 
 set updatetime=1000
 
+filetype plugin on
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'prabirshrestha/async.vim'
@@ -32,6 +34,27 @@ call plug#end()
 
 colorscheme dracula
 
+" Terminal mode:
+tnoremap <M-h> <C-\><C-n><C-w>h
+tnoremap <M-j> <C-\><C-n><C-w>j
+tnoremap <M-k> <C-\><C-n><C-w>k
+tnoremap <M-l> <C-\><C-n><C-w>l
+" Insert mode:
+inoremap <M-h> <Esc><C-w>h
+inoremap <M-j> <Esc><C-w>j
+inoremap <M-k> <Esc><C-w>k
+inoremap <M-l> <Esc><C-w>l
+" Visual mode:
+vnoremap <M-h> <Esc><C-w>h
+vnoremap <M-j> <Esc><C-w>j
+vnoremap <M-k> <Esc><C-w>k
+vnoremap <M-l> <Esc><C-w>l
+" Normal mode:
+nnoremap <M-h> <C-w>h
+nnoremap <M-j> <C-w>j
+nnoremap <M-k> <C-w>k
+nnoremap <M-l> <C-w>l
+
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 let g:rainbow_active = 1
@@ -46,16 +69,15 @@ let g:lsp_diagnostics_echo_cursor = 1
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+inoremap <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
 
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
-autocmd FileType rust autocmd CursorHold * LspHover
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 if executable('ra_lsp_server')
     au User lsp_setup call lsp#register_server({
-        \   'name': 'rust-language-server',
+        \   'name': 'rust-analyzer',
         \   'cmd': { server_info->[&shell, &shellcmdflag, 'ra_lsp_server'] },
         \   'root_uri': { server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'Cargo.toml'))},
         \   'whitelist': ['rust'],
