@@ -5,11 +5,19 @@ set formatoptions+=o
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set laststatus=2
 set nojoinspaces
 
 set nostartofline
-set autochdir
+
+set cindent
+set autoindent
+set smartindent
+
+set hlsearch
+set incsearch
+set ignorecase
+set title
+set titlestring=%t%m\ (%F) 
 
 filetype plugin on
 
@@ -71,13 +79,4 @@ inoremap <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
-if executable('ra_lsp_server')
-    au User lsp_setup call lsp#register_server({
-        \   'name': 'rust-analyzer',
-        \   'cmd': { server_info->[&shell, &shellcmdflag, 'ra_lsp_server'] },
-        \   'root_uri': { server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'Cargo.toml'))},
-        \   'whitelist': ['rust'],
-        \ })
-endif
 
