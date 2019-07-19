@@ -6,3 +6,6 @@ yadm submodule update --recursive --init
 echo Install vim plugins ...
 vim -c 'PluginInstall' -c 'qa!'
 
+echo Install neovim plugins ...
+nvim -c 'PlugInstall' -c 'qa!'
+
