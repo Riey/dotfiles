@@ -32,6 +32,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'roman/golden-ratio'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'dracula/vim'
 
@@ -79,4 +81,6 @@ inoremap <expr> <CR>    pumvisible() ? "\<C-y>" : "\<CR>"
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+map <C-n> :NERDTreeToggle<CR>
 
