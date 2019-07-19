@@ -11,12 +11,10 @@ set nojoinspaces
 set nostartofline
 set autochdir
 
-set hidden
+set updatetime=1000
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Plug 'Valloric/YouCompleteMe'
-" Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -42,12 +40,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
+let g:lsp_diagnostics_enabled = 1
+let g:lsp_signs_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
+
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 imap <c-space> <Plug>(asyncomplete_force_refresh)
 
+autocmd CursorHold * if &filetype == "rust" | LspHover
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 if executable('ra_lsp_server')
