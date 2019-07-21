@@ -10,7 +10,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-antigen theme dracula/zsh
+antigen theme ys
 
 antigen apply
 
