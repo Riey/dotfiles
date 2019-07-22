@@ -23,3 +23,5 @@ export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.cargo/bin"
 
+export GPG_TTY=$(tty)
+
