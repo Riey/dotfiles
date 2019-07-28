@@ -17,8 +17,11 @@
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Hack 13
 
-# default_border none
-# default_floating_border normal
+default_border none
+default_floating_border normal
+smart_gaps on
+gaps outer 10
+gaps inner 15
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -45,7 +48,8 @@ bindsym Mod1+Return exec alacritty
 bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+d exec dmenu_run
+bindsym Mod1+d exec --no-startup-id "rofi -show drun -font \\"Hack 12\\" -theme Monokai -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -225,6 +229,10 @@ bindsym Mod1+r mode "resize"
 # }
 
 exec_always --no-startup-id ~/.i3/polybar.sh &
+
+exec_always --no-startup-id ~/.i3/feh.sh &
+
+exec compton -b &
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
