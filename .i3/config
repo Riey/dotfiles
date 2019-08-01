@@ -134,7 +134,7 @@ set $ws9 "9:Discord"
 set $ws10 "10:Background"
 
 assign [class="Firefox"] $ws2
-assign [class="CLion"] $ws3
+assign [class="jetbrains-clion"] $ws3
 assign [class="Emacs"] $ws3
 assign [class="Steam"] $ws5
 assign [class="Lutris"] $ws5
