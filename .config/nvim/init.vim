@@ -13,6 +13,7 @@ set cindent
 set autoindent
 set smartindent
 
+set autochdir
 set hlsearch
 set incsearch
 set ignorecase
@@ -31,7 +32,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
-Plug 'roman/golden-ratio'
+" Plug 'roman/golden-ratio'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
