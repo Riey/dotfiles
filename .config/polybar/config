@@ -22,7 +22,7 @@ background = #88222222
 background-alt = #88444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #ccdfdfdf
-foreground-alt = #cc555555
+foreground-alt = #ee667788
 primary = #aaffb52a
 secondary = #aae60053
 alert = #aabd2c40
@@ -52,15 +52,15 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = D2Coding:size=12;1
+font-0 = D2Coding:size=11;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=12;1
-font-3 = Hack:size=12;1
-font-4 = "FontAwesome:size=12;0"
+font-2 = siji:pixelsize=11;1
+font-3 = "Hack Nerd Font:size=11;1"
+font-4 = "D2Coding:size=11;1"
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = xbacklight filesystem alsa pulseaudio memory cpu temperature date powermenu
+modules-right = xbacklight filesystem alsa pulseaudio cpu memory temperature eth wlan date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -107,7 +107,6 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /mnt/mx500
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %used%/%total%(%percentage_used%%)
 label-unmounted = %mountpoint% not mounted
@@ -150,7 +149,7 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = [%{T5}%{T4}] [%index%] %name%
+label-focused = [] [%index%] %name%
 label-focused-background = #2255bb
 label-focused-underline = #22bb33
 label-focused-padding = 4
@@ -181,15 +180,18 @@ label-separator = |
 
 [module/mpd]
 type = internal/mpd
-format-online =  <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = %{T4} %{T5}<label-song>%{T4}  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-next>
 
 icon-prev = 
 icon-stop = 
 icon-play = 
 icon-pause = 
 icon-next = 
+icon-seekb = 
+icon-seekf = 
 
-label-song-maxlen = 40
+label-song = %title%
+label-song-maxlen = 30
 label-song-ellipsis = true
 
 [module/xbacklight]
@@ -217,7 +219,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU:"
+format-prefix = ":"
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -225,7 +227,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM:"
+format-prefix = ":"
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used:2%%
@@ -237,7 +239,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected =  %upspeed%  %downspeed% (%signal%%)
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -245,11 +247,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 睊
+ramp-signal-1 = 直
+ramp-signal-2 = 直
+ramp-signal-3 = 
+ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
@@ -258,7 +260,7 @@ interface = enp3s0f0u2
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = "connected "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
