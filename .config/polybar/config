@@ -84,6 +84,9 @@ label = [ %title:0:40:...% ]
 label-foreground = ${colors.primary}
 label-font = 6
 
+label-empty = [ Empty ]
+label-empty-foreground = ${colors.foreground-alt}
+
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
