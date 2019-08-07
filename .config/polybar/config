@@ -57,6 +57,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=11;1
 font-3 = "Hack Nerd Font:size=11;1"
 font-4 = "D2Coding:size=11;1"
+font-5 = "Hack:size=11:style=bold;1"
 
 modules-left = bspwm i3
 modules-center = mpd xwindow
@@ -75,7 +76,7 @@ cursor-scroll = ns-resize
 type = internal/xwindow
 label = [ %title:0:40:...% ]
 label-foreground = ${colors.primary}
-label-font = 4
+label-font = 6
 
 [module/xkeyboard]
 type = internal/xkeyboard
