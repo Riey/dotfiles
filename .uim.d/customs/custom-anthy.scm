@@ -1,0 +1,6 @@
+(define anthy-show-segment-separator? #f)
+(define anthy-segment-separator "|")
+(define anthy-use-candidate-window? #t)
+(define anthy-candidate-op-count 1)
+(define anthy-nr-candidate-max 10)
+(define anthy-select-candidate-by-numeral-key? #f)
