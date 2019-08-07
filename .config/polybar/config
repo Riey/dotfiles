@@ -59,7 +59,7 @@ font-3 = "Hack Nerd Font:size=11;1"
 font-4 = "D2Coding:size=11;1"
 font-5 = "Hack:size=11:style=bold;1"
 
-modules-left = bspwm i3
+modules-left = i3 browser-btn
 modules-center = mpd xwindow
 modules-right = filesystem alsa pulseaudio cpu memory temperature eth wlan date powermenu
 
@@ -71,6 +71,12 @@ tray-background = #0063ff
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/browser-btn]
+type = custom/text
+content = 
+
+click-left = firefox-bin &
 
 [module/xwindow]
 type = internal/xwindow
