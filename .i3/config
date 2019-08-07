@@ -232,6 +232,7 @@ exec_always --no-startup-id ~/.i3/polybar.sh &
 
 exec_always --no-startup-id ~/.i3/feh.sh &
 
+exec mpd &
 exec compton -b &
 
 #######################################################################
