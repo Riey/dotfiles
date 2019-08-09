@@ -61,7 +61,7 @@ font-5 = "Hack:size=11:style=bold;1"
 
 modules-left = i3 browser-btn
 modules-center = mpd xwindow
-modules-right = filesystem alsa pulseaudio cpu memory temperature eth wlan date powermenu
+modules-right = alsa pulseaudio cpu memory temperature eth wlan date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -176,12 +176,12 @@ label-urgent-padding = 4
 label-urgent-font = 4
 
 ; Separator in between workspaces
-label-separator = |
+label-separator = 
 
 
 [module/mpd]
 type = internal/mpd
-format-online = %{T4} %{T5}<label-song>%{T4}  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-next>
+format-online = %{T4} %{T5}<label-song>%{T4} <toggle> <icon-next>
 
 icon-prev = 
 icon-stop = 
