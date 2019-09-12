@@ -1,8 +1,10 @@
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-	signingkey = B4F3FD062E611E65
+	signingkey = D19ECA5A712DEC5251DCAA0DF0FB761679CAAD45
 [core]
 	autocrlf = input
 [commit]
 	gpgsign = true
+[color]
+	ui = auto
