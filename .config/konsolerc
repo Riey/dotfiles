@@ -1,8 +1,8 @@
 [Desktop Entry]
-DefaultProfile=My.profile
+DefaultProfile=Profile 2.profile
 
 [DownloadDialog Settings]
-Height 1080=408
+Height 1080=411
 Width 1920=700
 
 [Favorite Profiles]
@@ -12,8 +12,8 @@ Favorites=
 ShowMenuBarByDefault=false
 
 [MainWindow]
-Height 1080=1042
+Height 1080=994
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAQSAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1920
+Width 1920=929
