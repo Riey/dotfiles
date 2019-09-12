@@ -235,6 +235,8 @@ exec_always --no-startup-id ~/.i3/feh.sh &
 exec mpd ~/.config/mpd/mpd.conf &
 exec compton -b &
 
+exec feh --randomize --bg-fill ~/.wallpaper
+
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
