@@ -1,3 +1,5 @@
+(define skk-show-annotation? #t)
+(define skk-show-annotation-in-preedit? #f)
 (define enable-annotation? #t)
 (define annotation-agent 'eb)
 (define eb-enable-for-annotation? #f)

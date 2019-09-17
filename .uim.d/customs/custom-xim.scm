@@ -1,2 +1,2 @@
-(define uim-xim-use-xft-font? #f)
-(define uim-xim-xft-font-name "Sans")
+(define uim-xim-use-xft-font? #t)
+(define uim-xim-xft-font-name "NanumGothic")
