@@ -1,7 +1,7 @@
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-	signingkey = D19ECA5A712DEC5251DCAA0DF0FB761679CAAD45
+	signingkey = 63E06EC28DB571E8641E214A551836AFD4225FC1
 [core]
 	autocrlf = input
 [commit]
