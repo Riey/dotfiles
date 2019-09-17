@@ -3,11 +3,14 @@
 echo Update submodules ...
 yadm submodule update --recursive --init
 
-echo Install vim plugins ...
-vim -c 'PluginInstall' -c 'qa!'
-
+mkdir -pv ~/.vim/autoload
 mkdir -pv ~/.local/share/nvim/site/autoload
+
+ln -s ~/repos/vim-plug/plug.vim ~/.vim/autoload/plug.vim
 ln -s ~/repos/vim-plug/plug.vim ~/.local/share/nvim/site/autoload/plug.vim
+
+echo Install vim plugins ...
+vim -c 'PlugInstall' -c 'qa!'
 
 echo Install neovim plugins ...
 nvim -c 'PlugInstall' -c 'qa!'
