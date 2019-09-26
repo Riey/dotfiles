@@ -1,0 +1,7 @@
+[rust]
+symbol = " "
+style = "bold red"
+
+[username]
+show_always = true
+
