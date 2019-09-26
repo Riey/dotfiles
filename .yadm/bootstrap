@@ -3,6 +3,8 @@
 echo Update submodules ...
 yadm submodule update --recursive --init
 
+cargo install starship
+
 mkdir -pv ~/.vim/autoload
 mkdir -pv ~/.local/share/nvim/site/autoload
 
