@@ -1,0 +1,6 @@
+game:
+  arch: win64
+  exe: drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe
+  prefix: /mnt/mx500/Games/starcraft-remastered
+wine:
+  version: tkg-3.20-x86_64
