@@ -6,7 +6,7 @@ style = "bold red"
 symbol = " "
 
 [package]
-symbol = " "
+symbol = "  "
 
 [username]
 show_always = true
