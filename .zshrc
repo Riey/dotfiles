@@ -21,10 +21,10 @@ export ANDROID_NDK=/opt/android-ndk
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export GPG_TTY=$(tty)
 
-source $HOME/.cargo/env
 alias ls="exa"
 eval "$(starship init zsh)"
 
