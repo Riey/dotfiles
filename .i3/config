@@ -133,22 +133,22 @@ set $ws8 "8"
 set $ws9 "9:Discord"
 set $ws10 "10:Background"
 
-assign [class="Firefox"] $ws2
-assign [class="jetbrains-clion"] $ws3
-assign [class="Emacs"] $ws3
-assign [class="Steam"] $ws5
-assign [class="Lutris"] $ws5
-assign [class="Discord"] $ws9
-assign [class="Clementine"] $ws10
+assign [class="Firefox"]            $ws2
+assign [class="jetbrains-clion"]    $ws3
+assign [class="Emacs"]              $ws3
+assign [class="Steam"]              $ws3
+assign [class="Lutris"]             $ws5
+assign [class="Discord"]            $ws9
+assign [class="Clementine"]         $ws10
 
-workspace $ws1 output HDMI-A-0
-workspace $ws3 output HDMI-A-0
-workspace $ws5 output HDMI-A-0
+workspace $ws1 output HDMI-1
+workspace $ws3 output HDMI-1
+workspace $ws5 output HDMI-1
 
-workspace $ws2 output HDMI-A-1
-workspace $ws4 output HDMI-A-1
-workspace $ws9 output HDMI-A-1
-workspace $ws10 output HDMI-A-1
+workspace $ws2 output HDMI-2
+workspace $ws4 output HDMI-2
+workspace $ws9 output HDMI-2
+workspace $ws10 output HDMI-2
 
 
 # switch to workspace
