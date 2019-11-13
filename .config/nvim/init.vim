@@ -20,8 +20,6 @@ set ignorecase
 set title
 set titlestring=%t%m\ (%F) 
 
-filetype plugin on
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'cespare/vim-toml'
@@ -29,7 +27,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'luochen1990/rainbow'
-" Plug 'roman/golden-ratio'
+Plug 'roman/golden-ratio'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
