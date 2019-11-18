@@ -13,12 +13,13 @@ set cindent
 set autoindent
 set smartindent
 
-set autochdir
 set hlsearch
 set incsearch
 set ignorecase
 set title
 set titlestring=%t%m\ (%F) 
+
+set history=10000
 
 call plug#begin('~/.local/share/nvim/plugged')
 

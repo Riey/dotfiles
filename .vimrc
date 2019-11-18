@@ -26,7 +26,7 @@ set shiftwidth=4
 " Always display a status bar
 set laststatus=2
 
-filetype plugin indent on
+set history=10000
 
 call plug#begin('~/.vim/bundle')
 
