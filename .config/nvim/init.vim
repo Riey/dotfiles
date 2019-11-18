@@ -6,6 +6,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set nojoinspaces
+set clipboard=unnamed
+set backspace=indent,eol,start
 
 set nostartofline
 
@@ -37,6 +39,9 @@ Plug 'dracula/vim'
 call plug#end()
 
 colorscheme dracula
+
+hi! Normal ctermbg=none guibg=none
+hi! NonText ctermbg=none guibg=none
 
 " Terminal mode:
 tnoremap <M-h> <C-\><C-n><C-w>h
