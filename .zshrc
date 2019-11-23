@@ -9,7 +9,6 @@ antigen bundle gitfast
 antigen bundle github
 antigen bundle sudo
 antigen bundle command-not-found
-antigen bundle vi-mode
 antigen bundle tmux
 antigen bundle tmuxinator
 antigen bundle cp

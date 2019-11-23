@@ -44,4 +44,3 @@ Plug 'dracula/vim'
 call plug#end()
 
 colorscheme dracula
-

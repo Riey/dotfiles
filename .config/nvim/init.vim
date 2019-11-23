@@ -6,7 +6,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set nojoinspaces
-set clipboard=unnamed
+set clipboard=unnamedplus
 set backspace=indent,eol,start
 
 set nostartofline
