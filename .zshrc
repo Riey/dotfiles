@@ -27,7 +27,12 @@ antigen apply
 export EDITOR=vim
 
 export ANDROID_SDK=/opt/android-sdk
+export ANDROID_SDK_ROOT=$ANDROID_SDK
+export ANDROID_HOME=$ANDROID_SDK
 export ANDROID_NDK=/opt/android-ndk
+export NDK_HOME=$ANDROID_NDK
+export CC_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android28-clang
+export AR_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.local/bin"
