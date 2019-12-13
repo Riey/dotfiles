@@ -1,13 +1,3 @@
-[rust]
-symbol = "Ｒ "
-style = "bold red"
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = "  "
-
 [username]
 show_always = true
 
