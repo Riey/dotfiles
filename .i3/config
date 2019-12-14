@@ -41,8 +41,7 @@ set $right l
 floating_modifier Mod1
 
 # start a terminal
-# bindsym Mod1+Return exec i3-sensible-terminal
-bindsym Mod1+Return         exec alacritty
+bindsym Mod1+Return         exec konsole
 
 # kill focused window
 bindsym Mod1+Shift+q        kill
@@ -133,13 +132,16 @@ set $ws8 "8"
 set $ws9 "9:Discord"
 set $ws10 "10:Background"
 
-assign [class="Firefox"]            $ws2
+assign [class="firefox"]            $ws2
 assign [class="jetbrains-clion"]    $ws3
 assign [class="Emacs"]              $ws3
 assign [class="Steam"]              $ws3
 assign [class="Lutris"]             $ws5
 assign [class="Discord"]            $ws9
 assign [class="Clementine"]         $ws10
+
+for_window [instance="battle.net.exe"] floating enable
+for_window [class="konsole"] floating enable
 
 workspace $ws1 output HDMI-1
 workspace $ws3 output HDMI-1
