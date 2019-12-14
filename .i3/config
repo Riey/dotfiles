@@ -142,6 +142,7 @@ assign [class="Clementine"]         $ws10
 
 for_window [instance="battle.net.exe"] floating enable
 for_window [class="konsole"] floating enable
+for_window [class="mpv"] floating enable
 
 workspace $ws1 output HDMI-1
 workspace $ws3 output HDMI-1
