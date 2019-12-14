@@ -41,5 +41,7 @@ export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export GPG_TTY=$(tty)
 
 alias ls="exa"
+alias l="exa -lhm --git"
+alias la="exa -lhma --git"
 eval "$(starship init zsh)"
 
