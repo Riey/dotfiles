@@ -1,0 +1,24 @@
+game:
+  arch: win64
+  exe: drive_c/Program Files (x86)/Battle.net/Battle.net.exe
+  prefix: /mnt/mx500/Games/hearthstone
+system:
+  env:
+    DXVK_CONFIG_FILE: /mnt/mx500/Games/hearthstone/dxvk.conf
+    DXVK_STATE_CACHE_PATH: /mnt/mx500/Games/hearthstone
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /mnt/mx500/Games/hearthstone
+    __GL_SHADER_DISK_CACHE_SIZE: '2000000000'
+  exclude_processes: Agent.exe "Battle.net Helper.exe"
+  pulse_latency: true
+  vk_icd: /usr/share/vulkan/icd.d/amd_icd32.json
+wine:
+  dxvk: true
+  esync: true
+  overrides:
+    api-ms-win-crt-private-l1-1-0: n,b
+    d3d12: disabled
+    nvapi: disabled
+    nvapi64: disabled
+    ucrtbase: n,b
+  version: ge-protonified-nofshack-4.9-x86_64

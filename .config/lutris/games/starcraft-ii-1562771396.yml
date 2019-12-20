@@ -8,12 +8,13 @@ system:
     PULSE_LATENCY_MSEC: '60'
   game_path: /mnt/mx500/Games
   terminal: false
+  vk_icd: /usr/share/vulkan/icd.d/amd_icd64.json
 wine:
   Audio: pulse
   SampleCount: 0 (disabled)
   dxvk: true
-  dxvk_version: 1.4.4
-  esync: false
+  dxvk_version: '1.5'
+  esync: true
   overrides:
     api-ms-win-crt-private-l1-1-0: native
     d3d12: disabled
