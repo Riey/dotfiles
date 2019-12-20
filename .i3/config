@@ -112,6 +112,7 @@ bindsym Mod1+Shift+minus    move scratchpad
 bindsym Mod1+minus          scratchpad show
 
 bindsym Print               exec spectacle
+bindsym Shift+Print         exec spectacle -r
 bindsym Mod1+Shift+Z        exec i3lock
 
 bindsym Mod1+Ctrl+plus      exec amixer -q sset Master 3%+
@@ -236,7 +237,7 @@ exec_always --no-startup-id ~/.i3/polybar.sh &
 exec_always --no-startup-id ~/.i3/feh.sh &
 
 exec mpd ~/.config/mpd/mpd.conf &
-exec compton -b &
+exec picom -b &
 
 exec feh --randomize --bg-fill ~/.wallpaper
 
