@@ -1,5 +1,8 @@
 source $HOME/zsh/antigen/antigen.zsh
 
+export FZF_BASE=/usr/bin/fzf
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 antigen use oh-my-zsh
 
 antigen bundle cargo
@@ -14,9 +17,11 @@ antigen bundle tmuxinator
 antigen bundle cp
 antigen bundle docker
 antigen bundle fd
+antigen bundle fzf
 antigen bundle ripgrep
 
-antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
