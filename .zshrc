@@ -1,6 +1,5 @@
 source $HOME/zsh/antigen/antigen.zsh
 
-export FZF_BASE=/usr/bin/fzf
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 antigen use oh-my-zsh
