@@ -1,0 +1,12 @@
+[Unit]
+Description=Start uim
+After=graphical.target
+
+[Service]
+Type=simple
+SuccessExitStatus=0
+ExecStart=/usr/bin/uim-xim
+
+[Install]
+WantedBy=default.target
+
