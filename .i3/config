@@ -145,14 +145,14 @@ for_window [instance="battle.net.exe"] floating enable
 for_window [class="konsole"] floating enable
 for_window [class="mpv"] floating enable
 
-workspace $ws1 output HDMI-1
-workspace $ws3 output HDMI-1
-workspace $ws5 output HDMI-1
+workspace $ws1 output HDMI-A-0
+workspace $ws3 output HDMI-A-0
+workspace $ws5 output HDMI-A-0
 
-workspace $ws2 output HDMI-2
-workspace $ws4 output HDMI-2
-workspace $ws9 output HDMI-2
-workspace $ws10 output HDMI-2
+workspace $ws2 output HDMI-A-1
+workspace $ws4 output HDMI-A-1
+workspace $ws9 output HDMI-A-1
+workspace $ws10 output HDMI-A-1
 
 
 # switch to workspace
@@ -236,7 +236,16 @@ exec_always --no-startup-id ~/.i3/polybar.sh &
 
 exec_always --no-startup-id ~/.i3/feh.sh &
 
-exec mpd ~/.config/mpd/mpd.conf &
+#if pgrep -x "mpd" > /dev/null
+#then
+#    exec mpd ~/.config/mpd/mpd.conf &
+#fi
+#
+#if pgrep -x "uim-xim" > /dev/null
+#then
+#    exec uim-xim &
+#fi
+
 # exec picom -b &
 
 exec feh --randomize --bg-fill ~/.wallpaper
