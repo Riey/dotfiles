@@ -16,7 +16,7 @@ antigen bundle tmuxinator
 antigen bundle cp
 antigen bundle docker
 antigen bundle fd
-antigen bundle fzf
+#antigen bundle fzf
 antigen bundle ripgrep
 
 #antigen bundle zsh-users/zsh-syntax-highlighting
@@ -24,7 +24,7 @@ antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-# antigen theme ys
+#antigen theme ys
 
 antigen apply
 
@@ -42,7 +42,10 @@ export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share/applications"
 export GPG_TTY=$(tty)
+export LESSCHARSET=utf-8
 
 alias ls="exa"
 alias l="exa -lhmg --git"
