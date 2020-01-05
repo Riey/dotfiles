@@ -1,12 +1,12 @@
 [Unit]
-Description=Start uim
-After=graphical.target
+Description=uim daemon
+Wants=uim-env.service
+After=xorg.target
 
 [Service]
-Type=simple
-SuccessExitStatus=0
 ExecStart=/usr/bin/uim-xim
+Restart=on-abort
 
 [Install]
-WantedBy=default.target
+WantedBy=xorg.target
 
