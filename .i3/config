@@ -141,18 +141,19 @@ assign [class="Lutris"]             $ws5
 assign [class="Discord"]            $ws9
 assign [class="Clementine"]         $ws10
 
-for_window [instance="battle.net.exe"] floating enable
-for_window [class="konsole"] floating enable
-for_window [class="mpv"] floating enable
+for_window [instance="battle.net.exe"]  floating enable
+for_window [class="mpv"]                floating enable
+for_window [class="vlc"]                floating enable
+for_window [class="firefox"]            floating enable
 
-workspace $ws1 output HDMI-A-0
-workspace $ws3 output HDMI-A-0
-workspace $ws5 output HDMI-A-0
+workspace $ws1  output  xinerama-0
+workspace $ws3  output  xinerama-0
+workspace $ws5  output  xinerama-0
 
-workspace $ws2 output HDMI-A-1
-workspace $ws4 output HDMI-A-1
-workspace $ws9 output HDMI-A-1
-workspace $ws10 output HDMI-A-1
+workspace $ws2  output  xinerama-1
+workspace $ws4  output  xinerama-1
+workspace $ws9  output  xinerama-1
+workspace $ws10 output  xinerama-1
 
 
 # switch to workspace
