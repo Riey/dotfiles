@@ -144,7 +144,10 @@ assign [class="Clementine"]         $ws10
 for_window [instance="battle.net.exe"]  floating enable
 for_window [class="mpv"]                floating enable
 for_window [class="vlc"]                floating enable
-for_window [class="firefox"]            floating enable
+for_window [class="discord"]            floating enable
+for_window [class="konsole" floating]   resize set 800 600
+
+for_window [class="firefox" title="^Mozilla Firefox$"] floating enable
 
 workspace $ws1  output  xinerama-0
 workspace $ws3  output  xinerama-0
