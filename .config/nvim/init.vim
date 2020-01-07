@@ -6,7 +6,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set nojoinspaces
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set backspace=indent,eol,start
 
 set nostartofline
@@ -46,8 +46,8 @@ call plug#end()
 
 colorscheme dracula
 
-hi! Normal ctermbg=none guibg=none
-hi! NonText ctermbg=none guibg=none
+" hi! Normal ctermbg=none guibg=none
+" hi! NonText ctermbg=none guibg=none
 
 " Terminal mode:
 tnoremap <M-h> <C-\><C-n><C-w>h
