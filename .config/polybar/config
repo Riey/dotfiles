@@ -53,8 +53,8 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = D2Coding:size=11;1
-font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-font-2 = siji:pixelsize=11;1
+font-1 = Hack:size=11;1
+font-2 = Hack:size=11;1
 font-3 = "Hack Nerd Font:size=11;1"
 font-4 = "D2Coding:size=11;1"
 font-5 = "Hack Nerd Font:size=11:style=bold;1"
@@ -419,10 +419,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = reboot
 
 menu-2-0 = power off
-menu-2-0-exec = sudo shutdown now
+menu-2-0-exec = shutdown now
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 

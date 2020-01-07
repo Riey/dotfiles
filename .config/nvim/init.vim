@@ -22,7 +22,7 @@ set title
 set titlestring=%t%m\ (%F)
 
 set hidden
-set cmdheight=2
+set cmdheight=1
 set shortmess+=c
 set signcolumn=yes
 set updatetime=300

@@ -104,7 +104,7 @@ font:
     #style: Italic
 
   # Point size
-  size: 12
+  size: 14
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -318,9 +318,10 @@ live_config_reload: true
 #   - (Linux/macOS) /bin/bash --login
 #   - (Windows) powershell
 shell:
-  program: /bin/zsh
-  args:
-    - --login
+    #  program: /bin/zsh
+    #  args:
+    #    - --login
+    program: /usr/bin/tmux
 
 # Windows 10 ConPTY backend (Windows only)
 #
