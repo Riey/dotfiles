@@ -10,3 +10,4 @@
 [submodule "/home/riey/.emacs.d"]
 	path = /home/riey/.emacs.d
 	url = https://github.com/syl20bnr/spacemacs
+	branch = develop
