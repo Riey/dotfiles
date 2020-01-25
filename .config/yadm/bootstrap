@@ -3,6 +3,10 @@
 echo Update submodules ...
 yadm submodule update --recursive --init
 
+# Install spacemacs
+git clone --branch=develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+# Install starship
 cargo install starship
 
 mkdir -pv ~/.vim/autoload
