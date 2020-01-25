@@ -4,10 +4,6 @@
 [submodule "repos/vim-plug"]
 	path = repos/vim-plug
 	url = https://github.com/junegunn/vim-plug
-[submodule "/home/riey/.tmux/plugins/tpm"]
+[submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "/home/riey/.emacs.d"]
-	path = /home/riey/.emacs.d
-	url = https://github.com/syl20bnr/spacemacs
-	branch = develop
