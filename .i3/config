@@ -137,9 +137,9 @@ set $ws10 "10:Background"
 assign [class="firefox"]            $ws2
 assign [class="jetbrains-.*"]       $ws3
 assign [class="Emacs"]              $ws3
-assign [class="Steam"]              $ws3
+assign [class="Steam"]              $ws5
 assign [class="Lutris"]             $ws5
-assign [class="Discord"]            $ws9
+#assign [class="Discord"]            $ws9
 assign [class="Clementine"]         $ws10
 
 for_window [instance="battle.net.exe"]                  floating enable
@@ -241,15 +241,8 @@ exec_always --no-startup-id ~/.i3/polybar.sh &
 
 exec_always --no-startup-id ~/.i3/feh.sh &
 
-#if pgrep -x "mpd" > /dev/null
-#then
-#    exec mpd ~/.config/mpd/mpd.conf &
-#fi
-#
-#if pgrep -x "uim-xim" > /dev/null
-#then
-#    exec uim-xim &
-#fi
+# exec mpd ~/.config/mpd/mpd.conf &
+exec uim-xim &
 
 # exec picom -b &
 
