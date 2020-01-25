@@ -28,7 +28,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
-export EDITOR=vim
+export EDITOR=/usr/bin/vim
 
 export ANDROID_SDK=/opt/android-sdk
 export ANDROID_SDK_ROOT=$ANDROID_SDK
@@ -38,10 +38,9 @@ export NDK_HOME=$ANDROID_NDK
 export CC_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android28-clang
 export AR_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar
 export JAVA_HOME=/usr/lib/jvm/default
-export PATH="$PATH:$HOME/.dotnet/tools"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share/applications"
 export GPG_TTY=$(tty)
