@@ -51,7 +51,7 @@ values."
                       auto-completion-complete-with-key-sequence-delay 0.1
                       auto-completion-idle-delay 0.2
                       auto-completion-private-snippets-directory nil
-                      auto-completion-enable-snippets-in-popup t
+                      ;; auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-help-tooltip t
                       auto-completion-use-company-box t
                       auto-completion-enable-sort-by-usage t)
@@ -59,6 +59,8 @@ values."
      dap
      (lsp :variables
           lsp-rust-server 'rust-analyzer
+          ;; lsp-rust-server 'rls
+          ;; lsp-rust-racer-completion t
           lsp-rust-analyzer-server-display-inlay-hints t)
      (rust :variables
            rust-backend 'lsp)
@@ -331,6 +333,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (load "~/rust-analyzer")
   )
 
 (defun dotspacemacs/user-config ()
@@ -340,7 +343,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (set-language-environment "Korean")
   (prefer-coding-system 'utf-8)
   (set-fontset-font t 'hangul   (font-spec :name "D2Coding-15"))
   (dolist (charset '(kana han symbol cjk-misc bopomofo))

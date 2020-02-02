@@ -12,7 +12,7 @@
 (define toggle-im-alt-im 'direct)
 (define uim-color 'uim-color-uim)
 (define candidate-window-style 'vertical)
-(define candidate-window-position 'left)
+(define candidate-window-position 'caret)
 (define enable-lazy-loading? #t)
 (define bridge-show-input-state? #f)
 (define bridge-show-with? 'time)

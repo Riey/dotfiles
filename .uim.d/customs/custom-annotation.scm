@@ -1,4 +1,6 @@
-(define enable-annotation? #t)
+(define skk-show-annotation? #t)
+(define skk-show-annotation-in-preedit? #f)
+(define enable-annotation? #f)
 (define annotation-agent 'eb)
 (define eb-enable-for-annotation? #f)
 (define annotation-eb-dic-path "/usr/share/dict")
