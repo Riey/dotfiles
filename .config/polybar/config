@@ -61,7 +61,7 @@ font-5 = "Hack Nerd Font:size=11:style=bold;1"
 
 modules-left = i3 browser-btn
 modules-center = mpd
-modules-right = pulseaudio cpu memory temperature eth wlan date powermenu
+modules-right = pulseaudio cpu memory eth wlan date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -239,9 +239,9 @@ type = internal/network
 interface = wlp29s0f3u4
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-connected-underline = #9f78e1
-label-connected =  %upspeed%  %downspeed% (%signal%%)
+label-connected = UP: %upspeed% DOWN: %downspeed%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -293,7 +293,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = VOL 
 label-volume-foreground = ${root.foreground}
 
 label-muted = %{T5} %{T4}MUTED
