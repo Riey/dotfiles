@@ -362,10 +362,10 @@ live_config_reload: true
 #   - (Linux/macOS) /bin/bash --login
 #   - (Windows) powershell
 shell:
-    program: /bin/zsh
-    args:
-      - --login
-    # program: /usr/bin/tmux
+    #program: /bin/zsh
+    #args:
+    #  - --login
+    program: /usr/bin/tmux
 
 # Windows 10 ConPTY backend (Windows only)
 #
