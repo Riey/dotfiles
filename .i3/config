@@ -41,7 +41,6 @@ set $right l
 floating_modifier Mod1
 
 # start a terminal
-#bindsym Mod1+Return         exec konsole
 bindsym Mod1+Return         exec alacritty
 
 # kill focused window
@@ -116,6 +115,9 @@ bindsym Print               exec spectacle
 bindsym Shift+Print         exec spectacle -r
 bindsym Mod1+Shift+Z        exec i3lock
 
+bindsym Mod1+Ctrl+s         exec mpc pause
+bindsym Mod1+Ctrl+p         exec mpc play
+bindsym Mod1+Ctrl+n         exec mpc next
 bindsym Mod1+Ctrl+plus      exec amixer -q sset Master 3%+
 bindsym Mod1+Ctrl+minus     exec amixer -q sset Master 3%-
 bindsym Mod1+Ctrl+m         exec amixer -q sset Master toggle
