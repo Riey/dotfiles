@@ -11,8 +11,6 @@ set tabstop=4
 set shiftwidth=4
 set laststatus=2
 set nostartofline
-set cindent
-set autoindent
 set smartindent
 
 set history=10000
@@ -27,6 +25,11 @@ Plug 'cespare/vim-toml'
 Plug 'scrooloose/syntastic'
 " lightweight status bar
 Plug 'bling/vim-airline'
+
+Plug 'osyo-manga/vim-over'
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'Riey/kes.vim'
 " Dracula theme
 Plug 'dracula/vim'
 

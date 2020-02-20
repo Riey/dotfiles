@@ -11,8 +11,6 @@ set backspace=indent,eol,start
 
 set nostartofline
 
-set cindent
-set autoindent
 set smartindent
 
 set hlsearch
@@ -39,6 +37,9 @@ Plug 'luochen1990/rainbow'
 Plug 'roman/golden-ratio'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'Riey/kes.vim'
 
 Plug 'dracula/vim'
 
