@@ -1,7 +1,5 @@
 source $HOME/zsh/antigen/antigen.zsh
 
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
 antigen use oh-my-zsh
 
 antigen bundle cargo
