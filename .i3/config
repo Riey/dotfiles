@@ -111,8 +111,8 @@ bindsym Mod1+Shift+minus    move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym Mod1+minus          scratchpad show
 
-bindsym Print               exec scrot
-bindsym Shift+Print         exec scrot -a
+bindsym Print               exec cd ~/Pictures/ && scrot
+bindsym Shift+Print         exec cd ~/Pictures/ && scrot -s
 bindsym Mod1+Shift+Z        exec i3lock
 
 bindsym Mod1+Ctrl+s         exec mpc pause
