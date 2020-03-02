@@ -111,8 +111,8 @@ bindsym Mod1+Shift+minus    move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym Mod1+minus          scratchpad show
 
-bindsym Print               exec cd ~/Pictures/ && scrot
-bindsym Shift+Print         exec cd ~/Pictures/ && scrot -s
+bindsym Print               exec gnome-screenshot --interactive
+bindsym Shift+Print         exec gnome-screenshot
 bindsym Mod1+Shift+Z        exec i3lock
 
 bindsym Mod1+Ctrl+s         exec mpc pause
@@ -250,7 +250,6 @@ bar {
 
 # exec_always --no-startup-id ~/.i3/polybar.sh &
 
-exec feh --randomize --bg-fill ~/.wallpaper
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
