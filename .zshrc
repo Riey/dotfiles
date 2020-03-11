@@ -39,8 +39,9 @@ export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications"
-export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share/applications"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share/:/usr/local/share/"
+#export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications/"
+#export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share/applications/"
 export GPG_TTY=$(tty)
 export LESSCHARSET=utf-8
 

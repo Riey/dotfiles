@@ -1,8 +1,11 @@
-theme = "modern"
+[theme]
+name = "modern"
+
+[theme.overrides]
+separator = ""
 
 [icons]
 name = "awesome"
-
 
 [[block]]
 block = "focused_window"

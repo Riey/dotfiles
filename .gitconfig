@@ -8,3 +8,5 @@
 	gpgsign = true
 [color]
 	ui = auto
+[github]
+	user = Riey

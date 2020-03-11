@@ -1,4 +1,6 @@
 {
-    "rust-analyzer.enableCargoWatchOnStartup": true
+    "rust-analyzer.enableCargoWatchOnStartup": true,
+    "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
+    "rust-analyzer.cargoFeatures.allFeatures": true
 }
 
