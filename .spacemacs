@@ -75,9 +75,13 @@ This function should only modify configuration layer settings."
      markdown
      vim-empty-lines
 
-     (neotree :variables
-              neo-theme 'icons
-              neo-vc-integration '(face))
+     (treemacs :variables
+               treemacs-use-filewatch-mode t
+               treemacs-use-git-mode 'deffered
+               treemacs-collapse-dirs 3)
+     ;; (neotree :variables
+     ;;          neo-theme 'icons
+     ;;          neo-vc-integration '(face))
 
      better-defaults
      (org :variables
@@ -241,7 +245,7 @@ It should only modify the values of Spacemacs settings."
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
    dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
 
-   ;; If non nil the cursor color matches the state color in GUI Emacs.
+   ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -374,8 +378,8 @@ It should only modify the values of Spacemacs settings."
    ;; If you use Emacs as a daemon and wants unicode characters only in GUI set
    ;; the value to quoted `display-graphic-p'. (default t)
    dotspacemacs-mode-line-unicode-symbols t
-   dotspacemacs-mode-line-theme '(vim-powerline :separator alternate)
-   ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
+
+   ;; If non-nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
    ;; when it reaches the top or bottom of the screen. (default t)
    dotspacemacs-smooth-scrolling t

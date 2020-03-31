@@ -1,7 +1,7 @@
 source $HOME/zsh/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-
+ 
 antigen bundle cargo
 antigen bundle rust
 antigen bundle git
@@ -18,6 +18,9 @@ antigen bundle fd
 antigen bundle ripgrep
 
 #antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
@@ -45,8 +48,16 @@ export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share/:/usr/local/share/"
 export GPG_TTY=$(tty)
 export LESSCHARSET=utf-8
 
-alias ls="exa"
-alias l="exa -lhmg --git"
-alias la="exa -lhmga --git"
-eval "$(starship init zsh)"
+alias cat='bat'
+
+# alias ls="exa"
+# alias l="exa -lhmg --git"
+# alias la="exa -lhmga --git"
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+# eval "$(starship init zsh)"
 
