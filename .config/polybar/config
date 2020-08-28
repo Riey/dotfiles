@@ -52,12 +52,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = D2Coding:size=11;1
-font-1 = Hack:size=11;1
-font-2 = Hack:size=11;1
-font-3 = "Hack Nerd Font:size=11;1"
-font-4 = "D2Coding:size=11;1"
-font-5 = "Hack Nerd Font:size=11:style=bold;1"
+font-0 = Hack:size=12;1
+font-1 = Hack:size=12;1
+font-2 = Hack:size=12;1
+font-3 = "Hack Nerd Font:size=12;1"
+font-4 = "D2Coding:size=12;1"
+font-5 = "Hack Nerd Font:size=12:style=bold;1"
 
 modules-left = i3 browser-btn
 modules-center = mpd
@@ -184,13 +184,21 @@ label-separator =
 type = internal/mpd
 format-online = %{T4} %{T5}<label-song>%{T4} <toggle> <icon-next>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-icon-seekb = 
-icon-seekf = 
+; icon-prev = 
+; icon-stop = 
+; icon-play = 
+; icon-pause = 
+; icon-next = 
+; icon-seekb = 
+; icon-seekf = 
+
+icon-prev = *
+icon-stop = X
+icon-play = >
+icon-pause = #
+icon-next = +
+icon-seekb = <<
+icon-seekf = >>
 
 label-song = %title%
 label-song-maxlen = 30
