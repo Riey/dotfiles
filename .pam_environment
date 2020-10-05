@@ -1,3 +1,4 @@
 GTK_IM_MODULE=uim
 QT_IM_MODULE=uim
+QT4_IM_MODULE=uim
 XMODIFIERS=@im=uim
