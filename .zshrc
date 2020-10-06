@@ -27,7 +27,6 @@ antigen bundle ripgrep
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
