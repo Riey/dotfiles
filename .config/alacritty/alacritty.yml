@@ -66,7 +66,7 @@ font:
     #   - (Linux) monospace
     #   - (Windows) Consolas
     # family: monospace
-    family: "Meslo LGS Nerd Font Mono"
+    family: "Hack Nerd Font"
 
 
     # The `style` can be specified to pick a specific face.
