@@ -23,7 +23,9 @@ set hidden
 set cmdheight=1
 set shortmess+=c
 set signcolumn=yes
-set updatetime=300
+set updatetime=150
+" Preview replace
+set inccommand=nosplit
 
 set history=10000
 
@@ -47,8 +49,7 @@ call plug#end()
 
 colorscheme dracula
 
-" hi! Normal ctermbg=none guibg=none
-" hi! NonText ctermbg=none guibg=none
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 
 " Terminal mode:
 tnoremap <M-h> <C-\><C-n><C-w>h

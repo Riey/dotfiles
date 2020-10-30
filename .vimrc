@@ -2,7 +2,8 @@ set nocompatible
 set nowrap
 syntax on
 set number
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
+set formatoptions+=o 
 set mouse=a
 set backspace=indent,eol,start
 
@@ -36,3 +37,6 @@ Plug 'dracula/vim'
 call plug#end()
 
 colorscheme dracula
+
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg"
+

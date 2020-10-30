@@ -1,3 +1,7 @@
+# Keep this line on the top for prevent just `not a tty`
+export GPG_TTY=$(tty)
+
+#
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -51,7 +55,6 @@ export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share/:/usr/local/share/"
 #export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications/"
 #export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share/applications/"
-export GPG_TTY=$(tty)
 export LESSCHARSET=utf-8
 
 alias cat='bat'
