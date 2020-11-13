@@ -1,6 +1,15 @@
 {
-    "rust-analyzer.enableCargoWatchOnStartup": true,
-    "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
-    "rust-analyzer.cargoFeatures.allFeatures": true
+    "rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
+    "rust-analyzer.cargo.features": ["rust-analyzer"],
+    "rust-analyzer.cargo.autoreload": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.hoverActions.enable": true,
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    "rust-analyzer.lens.enable": true,
+    "rust-analyzer.lens.methodReferences": true,
+    "rust-analyzer.lens.implementations": true,
+    "rust-analyzer.inlayHints.chainingHints": true,
+    "rust-analyzer.inlayHints.refreshOnInsertMode": true,
+    "codeLens.enable": true
 }
 

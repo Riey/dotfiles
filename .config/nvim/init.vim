@@ -51,6 +51,9 @@ colorscheme dracula
 
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 
+map <C-j> <Nop>
+map <C-k> <Nop>
+
 " Terminal mode:
 tnoremap <M-h> <C-\><C-n><C-w>h
 tnoremap <M-j> <C-\><C-n><C-w>j
