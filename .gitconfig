@@ -1,7 +1,7 @@
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-    signingkey = D12B65A5F9B1B3FC92FDE9D78DDA8E3FC668B55E
+    signingkey = AC172BDC909D487752B8020BA037AE7BB3F7C484
 [core]
 	autocrlf = input
 [commit]
@@ -14,3 +14,5 @@
 	rebase = no
 [gpg]
 	program = gpg
+[trim]
+	bases = develop,master
