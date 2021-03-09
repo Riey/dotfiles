@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu j4-dmenu-desktop --dmenu='bemenu -i --nb "#3f3f3f" --nf "#dcdccc" --fn "pango:DejaVu Sans Mono 12"' --term='termite' | xargs swaymsg exec --
+set $menu rofi -show drun | xargs swaymsg exec --
 
 focus_follows_mouse no
 
@@ -30,13 +30,9 @@ hide_edge_borders smart
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg ~/wallpapers/wallpaper.jpg fill
+output * bg ~/wallpapers/wallpaper.webp fill
 
-
-
-#
-# Example configuration:
-#
+output * mode 1920x1080@75Hz
 output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -258,6 +254,5 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
 }
-exec --no-startup-id uim-xim
 
 include /etc/sway/config.d/*

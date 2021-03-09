@@ -1,7 +1,7 @@
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-    signingkey = AC172BDC909D487752B8020BA037AE7BB3F7C484
+    signingkey = C84234D648DFE64AF6248C41A44B1E08773F3280
 [core]
 	autocrlf = input
 [commit]
@@ -16,3 +16,5 @@
 	program = gpg
 [trim]
 	bases = develop,master
+[credential "https://github.com"]
+	helper = !gh auth git-credential
