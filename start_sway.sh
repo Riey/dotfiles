@@ -1,6 +1,10 @@
 export GTK_IM_MODULE=kime
+export QT_IM_MODULE=kime
 export XMODIFIERS=@im=kime
-kime-xim &
+
+doas rc-service wpa_supplicant start
+kime-window &
+mpd
 
 sway
 
