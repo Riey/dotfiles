@@ -18,7 +18,8 @@ antigen bundle rust
 antigen bundle git
 antigen bundle gitfast
 antigen bundle github
-antigen bundle sudo
+# antigen bundle sudo
+antigen bundle doas
 antigen bundle command-not-found
 antigen bundle tmux
 antigen bundle tmuxinator
@@ -49,8 +50,7 @@ export NDK_HOME=$ANDROID_NDK
 export CC_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android29-clang
 export AR_aarch64_linux_android=$NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar
 export JAVA_HOME=/usr/lib/jvm/default
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share/:/usr/local/share/"
 #export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share/applications/"

@@ -255,4 +255,7 @@ bar {
     swaybar_command waybar
 }
 
+exec mpd
+exec kime-window
+
 include /etc/sway/config.d/*
