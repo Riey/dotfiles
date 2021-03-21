@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu rofi -show drun | xargs swaymsg exec --
+set $menu rofi -show drun -show-icons | xargs swaymsg exec --
 
 focus_follows_mouse no
 
@@ -30,10 +30,10 @@ hide_edge_borders smart
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpapers/wallpaper.webp fill
+output * bg ~/wallpapers/wallpaper.jpg fill
 
 output * mode 1920x1080@75Hz
-output HDMI-A-1 resolution 1920x1080 position 1920,0
+output HDMI-A-1 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -165,7 +165,8 @@ output HDMI-A-1 resolution 1920x1080 position 1920,0
     for_window [class="discord"]                            floating enable
     for_window [class="jetbrains-.*" title="win0"]          floating enable border none
     for_window [class="konsole" floating]                   resize set 800 600
-    for_window [class="firefox" title="이미지 업로드 .*"]   floating enable
+    for_window [title="Picture-in-Picture"]                 floating enable
+    for_window [title="이미지 업로드 .*"]                   floating enable
 
     workspace 1  output  HDMI-A-1
     workspace 3  output  HDMI-A-1
@@ -255,7 +256,7 @@ bar {
     swaybar_command waybar
 }
 
-exec mpd
-exec kime-window
+exec kime-indicator
+exec mako
 
 include /etc/sway/config.d/*
