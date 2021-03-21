@@ -3,6 +3,5 @@ export QT_IM_MODULE=kime
 export XMODIFIERS=@im=kime
 
 doas rc-service wpa_supplicant start
-
-sway
+dbus-run-session sway
 
