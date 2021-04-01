@@ -231,22 +231,25 @@ output HDMI-A-1 position 1920,0
 # Resizing containers:
 #
 mode "resize" {
+    set $step 30px
+
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width $step
+    bindsym $down resize grow height $step
+    bindsym $up resize shrink height $step
+    bindsym $right resize grow width $step
 
     # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Left resize shrink width $step
+    bindsym Down resize grow height $step
+    bindsym Up resize shrink height $step
+    bindsym Right resize grow width $step
 
     # Return to default mode
+    bindsym $mod+r mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
