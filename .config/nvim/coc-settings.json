@@ -1,6 +1,5 @@
 {
     "rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
-    "rust-analyzer.cargo.features": ["rust-analyzer"],
     "rust-analyzer.cargo.autoreload": true,
     "rust-analyzer.procMacro.enable": true,
     "rust-analyzer.hoverActions.enable": true,

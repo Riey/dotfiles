@@ -11,6 +11,11 @@ set backspace=indent,eol,start
 
 set nostartofline
 
+filetype plugin on
+filetype indent on
+
+set shellslash
+
 set smartindent
 
 set hlsearch
@@ -31,7 +36,9 @@ set history=10000
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'rust-lang-nursery/rustfmt'
 Plug 'cespare/vim-toml'
+Plug 'vim-latex/vim-latex'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -79,6 +86,8 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 
 let g:rainbow_active = 1
 
+let g:rustfmt_autosave = 1
+let g:tex_flavor='latex'
 let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
