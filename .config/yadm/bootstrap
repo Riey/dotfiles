@@ -16,5 +16,5 @@ echo Install vim plugins ...
 vim -c 'PlugInstall' -c 'qa!'
 
 echo Install neovim plugins ...
-nvim -c 'PlugInstall' -c 'qa!'
+nvim -c 'PlugInstall' -c 'CocInstall coc-rust-analyzer' -c 'qa!'
 
