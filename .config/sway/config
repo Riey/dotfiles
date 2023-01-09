@@ -30,10 +30,14 @@ hide_edge_borders smart
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpapers/wallpaper.jpg fill
+output eDP-1 bg ~/wallpapers/wallpaper.jpg fill
 
-output * mode 1920x1080@75Hz
-output HDMI-A-1 position 1920,0
+output eDP-1 mode 3840x2400
+output eDP-1 scale 2
+output eDP-1 adaptive_sync on
+output eDP-1 render_bit_depth 10
+output eDP-1 subpixel rgb
+
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -168,14 +172,14 @@ output HDMI-A-1 position 1920,0
     for_window [title="Picture-in-Picture"]                 floating enable
     for_window [title="이미지 업로드 .*"]                   floating enable
 
-    workspace 1  output  HDMI-A-1
-    workspace 3  output  HDMI-A-1
-    workspace 5  output  HDMI-A-1
+    # workspace 1  output  HDMI-A-1
+    # workspace 3  output  HDMI-A-1
+    # workspace 5  output  HDMI-A-1
 
-    workspace 2  output  HDMI-A-2
-    workspace 4  output  HDMI-A-2
-    workspace 9  output  HDMI-A-2
-    workspace 10 output  HDMI-A-2
+    # workspace 2  output  HDMI-A-2
+    # workspace 4  output  HDMI-A-2
+    # workspace 9  output  HDMI-A-2
+    # workspace 10 output  HDMI-A-2
 
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
@@ -221,11 +225,18 @@ output HDMI-A-1 position 1920,0
 # ScreenShot:
 #
 
-    set $pr1 Print
-    set $pr2 Control+Print
+    #set $pr1 Print
+    #set $pr2 Control+Print
+    set $pr1 $mod+p
+    set $pr2 $mod+Control+p
 
     bindsym $pr1 exec grim ~/Pictures/$(date +"%Y%m%d%H%M%S").png
     bindsym $pr2 exec grim -g "$(slurp)" ~/Pictures/$(date +"%Y%m%d%H%M%S").png
+
+# Brightness
+
+    bindsym XF86MonBrightnessUp exec sudo /home/riey/.config/sway/brightness.py up
+    bindsym XF86MonBrightnessDown exec sudo /home/riey/.config/sway/brightness.py down
 
 #
 # Resizing containers:
@@ -259,7 +270,8 @@ bar {
     swaybar_command waybar
 }
 
-exec kime-indicator
+exec kime
 exec mako
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 include /etc/sway/config.d/*

@@ -1,25 +1,14 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-    signingkey = 6D3331CEE6D14FDAFC2B39872D09658FE7407060
-[core]
-	autocrlf = input
+	signingKey = A8DC04B22A63480265F55CBFC9A6AB013237A378
 [commit]
-	gpgsign = true
-[color]
-	ui = auto
-[github]
-	user = Riey
-[pull]
-	rebase = no
+	gpgSign = true
 [gpg]
-	program = gpg
-[trim]
-	bases = develop,master
-[credential "https://github.com"]
-	helper = !gh auth git-credential
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+	program = /usr/bin/gpg2
