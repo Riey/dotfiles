@@ -235,8 +235,8 @@ output eDP-1 subpixel rgb
 
 # Brightness
 
-    bindsym XF86MonBrightnessUp exec sudo /home/riey/.config/sway/brightness.py up
-    bindsym XF86MonBrightnessDown exec sudo /home/riey/.config/sway/brightness.py down
+    bindsym XF86MonBrightnessUp exec ~/.config/sway/brightness.py up
+    bindsym XF86MonBrightnessDown exec ~/.config/sway/brightness.py down
 
 #
 # Resizing containers:
