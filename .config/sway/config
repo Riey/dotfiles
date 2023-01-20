@@ -36,7 +36,7 @@ output eDP-1 mode 3840x2400
 output eDP-1 scale 2
 output eDP-1 adaptive_sync on
 output eDP-1 render_bit_depth 10
-output eDP-1 subpixel rgb
+#output eDP-1 subpixel rgb
 
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -237,6 +237,11 @@ output eDP-1 subpixel rgb
 
     bindsym XF86MonBrightnessUp exec ~/.config/sway/brightness.py up
     bindsym XF86MonBrightnessDown exec ~/.config/sway/brightness.py down
+
+# Sound
+
+    bindsym XF86AudioRaiseVolume exec amixer set Headphone 2%+
+    bindsym XF86AudioLowerVolume exec amixer set Headphone 2%-
 
 #
 # Resizing containers:
