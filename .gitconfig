@@ -7,7 +7,7 @@
 [user]
 	email = creeper844@gmail.com
 	name = Riey
-	signingKey = A8DC04B22A63480265F55CBFC9A6AB013237A378
+	signingKey = E4CFF05BAA845B58730B032231F565D86CC5DB5C 
 [commit]
 	gpgSign = true
 [gpg]
