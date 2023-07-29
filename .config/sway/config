@@ -26,16 +26,29 @@ default_border pixel 1
 default_floating_border none 
 hide_edge_borders smart
 
+input * xkb_numlock enabled
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output eDP-1 bg ~/wallpapers/wallpaper.jpg fill
 
-output eDP-1 mode 3840x2400
-output eDP-1 scale 2
-output eDP-1 adaptive_sync on
-output eDP-1 render_bit_depth 10
+set $case HDMI-A-1
+
+output $case position 0,0
+output $case mode 800x1280
+output $case transform 270
+
+set $main DP-2
+
+output $main mode 1920x1080@75Hz
+output $main adaptive_sync on
+
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+#output eDP-1 bg ~/wallpapers/wallpaper.jpg fill
+
+# output eDP-1 mode 3840x2400
+# output eDP-1 scale 2
+# output eDP-1 adaptive_sync on
+# output eDP-1 render_bit_depth 10
 #output eDP-1 subpixel rgb
 
 #
@@ -225,12 +238,12 @@ output eDP-1 render_bit_depth 10
 # ScreenShot:
 #
 
-    #set $pr1 Print
-    #set $pr2 Control+Print
-    set $pr1 $mod+p
-    set $pr2 $mod+Control+p
+    set $pr1 Print
+    set $pr2 Control+Print
+    #set $pr1 $mod+p
+    #set $pr2 $mod+Control+p
 
-    bindsym $pr1 exec grim ~/Pictures/$(date +"%Y%m%d%H%M%S").png
+    bindsym $pr1 exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') ~/Pictures/$(date +"%Y%m%d%H%M%S").png
     bindsym $pr2 exec grim -g "$(slurp)" ~/Pictures/$(date +"%Y%m%d%H%M%S").png
 
 # Brightness

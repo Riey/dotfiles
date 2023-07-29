@@ -68,7 +68,7 @@ font:
     #   - (Linux) monospace
     #   - (Windows) Consolas
     # family: monospace
-    family: Hack Nerd Font Mono
+    family: Sarasa Fixed K
 
 
     # The `style` can be specified to pick a specific face.
@@ -80,7 +80,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font Mono
+    family: Sarasa Fixed K
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -91,7 +91,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font Mono
+    family: Sarasa Fixed K
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -347,10 +347,6 @@ shell:
 # backend cannot be initialized.
 enable_experimental_conpty_backend: false
 
-# Send ESC (\x1b) before characters when alt is pressed.
-alt_send_esc: true
-
-# Key bindings
 #
 # Key bindings are specified as a list of objects. Each binding will specify a
 # key and modifiers required to trigger it, terminal modes where the binding is
